@@ -1,0 +1,240 @@
+body {
+    display: grid;
+    gap: 5px 5px;
+    background-color: darkslategray;
+    padding: 5px;
+    grid-template-columns: auto;
+    grid-template-rows: 75px 100px 500px 50px;
+    grid-template-areas: "head" "aside" "main" "foot";
+}
+
+header {
+    grid-area: head;
+    background: linear-gradient(rgb(63, 0, 95),blue);
+    box-shadow: 0px 0px 20px black;
+    color: white;
+    text-align: center;
+}
+
+main {
+    grid-area: main;
+    color: whitesmoke;
+    background: linear-gradient(rgb(63, 0, 95),blue);
+    box-shadow: 0px 0px 20px black;
+    padding: 5px;
+}
+
+main > span {
+    font: bold 18pt/150% arial;
+    display: inline-block;
+}
+
+#animation2 {
+    opacity: 0%;
+    animation: moveAnswer 1s linear 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveAnswer {
+            0%   { opacity:50%; color:yellow; transform: translate(-255px, 60px); }
+            50%  { opacity:100%; transform: translate(0px, 60px); }
+            100% { opacity:100%; color:red; transform: translate(0px, 0px) }
+         }
+
+#animation1 {
+   color: white;
+   font-size: 30pt;
+   animation-name: move;
+   position: relative;
+   top: -10px;
+   animation-duration: 3s;
+   animation-iteration-count: 2;
+}
+
+@keyframes move {
+   0%   { color:white; left:0px; top:-10px; }
+   50%  { color:orange; left:-200px; top:-10px; }
+   75%  { color:red; left:200px; top:-10px; }
+   100% { color:white; left:0px; top:-10px; }
+}
+
+main2 {
+    grid-area: main1;
+    color: whitesmoke;
+    background: linear-gradient(rgb(63, 0, 95),blue);
+    box-shadow: 0px 0px 20px black;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+main2 img {
+    width: 75%;
+    margin: auto;
+    animation: movePicture1 1s linear 3s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+    opacity: 0%;
+}
+
+@keyframes movePicture1 {
+    0%   {opacity: 50%; transform: translate(-300px, 0px);}
+    100% {opacity: 100%; transform: translate(0px, 0px);}
+}
+
+main3 {
+    grid-area: main2;
+    color: whitesmoke;
+    background: linear-gradient(rgb(63, 0, 95),blue);
+    box-shadow: 0px 0px 20px black;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+main3 img {
+    width: 70%;
+    margin: auto;
+    animation: movePicture 1s linear 3s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+    opacity: 0%;
+}
+
+@keyframes movePicture {
+    0%   {opacity: 50%; transform: translate(200px, 0px);}
+    100% {opacity: 100%; transform: translate(0px, 0px);}
+}
+
+aside {
+    grid-area: aside;
+    color: whitesmoke;
+    background: linear-gradient(black,rgb(136, 136, 1));
+    box-shadow: 0px 0px 20px black;
+    padding: 5px;
+}
+
+.button1 {
+   padding: 2px;
+   margin-top: 40px;
+   margin-left: auto;
+   margin-right: auto;
+   color: black;
+   text-align: center;
+   vertical-align: middle;
+   width: 200px;
+   height: 40px; 
+   line-height: 60px;   
+   font: bold 16pt/150% arial;
+   border: solid 2px red;
+   box-shadow: 2px 2px 3px;
+   border-radius: 10px;   
+   background: radial-gradient(white, #bbb);
+   transition: all 100ms ease-in-out;   
+}
+
+.button1:hover {
+   transform: scale(1.3, 1.3);
+   color: red;  
+   cursor: pointer;
+}
+
+.button1:active {
+    background: radial-gradient(#ddd, #999);
+    transform: scale(1.0, 1.0);
+}
+
+.button2 {
+   padding: 2px;
+   margin-top: 40px;
+   margin-left: auto;
+   margin-right: auto;
+   color: black;
+   text-align: center;
+   vertical-align: middle;
+   width: 200px;
+   height: 40px; 
+   line-height: 60px;   
+   font: bold 16pt/150% arial;
+   border: solid 2px red;
+   box-shadow: 2px 2px 3px;
+   border-radius: 10px;   
+   background: radial-gradient(white, #bbb);
+   transition: all 100ms ease-in-out;   
+}
+
+.button2:hover {
+   transform: scale(1.3, 1.3);
+   color: red;  
+   cursor: pointer;
+}
+
+.button2:active {
+    background: radial-gradient(rgb(229, 4, 218), rgb(0, 195, 255));
+    transform: scale(2.0, 2.0);
+}
+
+
+.button3 {
+   padding: 2px;
+   margin-top: 40px;
+   margin-left: auto;
+   margin-right: auto;
+   color: black;
+   text-align: center;
+   vertical-align: middle;
+   width: 200px;
+   height: 40px; 
+   line-height: 60px;   
+   font: bold 16pt/150% arial;
+   border: solid 2px red;
+   box-shadow: 2px 2px 3px;
+   border-radius: 10px;   
+   background: radial-gradient(white, #bbb);
+   transition: all 100ms ease-in-out;   
+}
+
+.button3:hover {
+   transform: scale(1.3, 1.3);
+   color: red;  
+   cursor: pointer;
+}
+
+.button3:active {
+    background: radial-gradient(black, black);
+    transform: scale(.4, .4);
+}
+
+footer {
+    font: bold 18pt/150% arial;
+    color: whitesmoke;
+    grid-area: foot;
+    background: linear-gradient(rgb(63, 0, 95), white);
+    box-shadow: 0px 0px 20px black;
+    padding: 5px;
+    animation: footAnimation 2s linear 7.5s forwards;
+    opacity: 0%;
+}
+
+
+@keyframes footAnimation {
+    0%   {opacity: 25%; transform: translate(0px, -700px);}
+    100% {opacity: 100%; transform: translate(0px, 0px);}
+}
+
+@media all and (min-width: 600px) {
+    body {
+        display: grid;
+        gap: 8px 8px;
+        background-color: darkslategray;
+        margin-left: 10%;
+        margin-right: 10%;
+        grid-template-rows: 75px 300px 300px 50px;
+        grid-template-columns: auto auto auto auto;
+        grid-template-areas: "head head head head"
+                             "aside main main main"
+                             "aside main1 main2 main2"
+                             "foot foot foot foot";
+    }
+}

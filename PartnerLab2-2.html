@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Interactive Website</title>
+        <script src="iwprograms.js"></script>
+        <link rel="stylesheet" href="stylesheet2.css">
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index.html">My Library of Webpages!</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Practice Activities</a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
+                                    <li><a class="dropdown-item" href="Transform&Filter2.html">Lesson 8 Activity 2</a></li>
+                                    <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Partner Labs</a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
+                                    <li><a class="dropdown-item" href="PartnerLab2-2.html">Partner Lab 2</a></li>
+                                    <li><a class="dropdown-item" href="PartnerLab1-2.html">Portfolio Item</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Individual Assignments</a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
+                                    <li><a class="dropdown-item" href="portfolio-overview.html">Portfolio Overview</a></li>
+                                    <li><a class="dropdown-item" href="portfolio-item.html">Portfolio Item</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        <h1 id="greeting" name="greeting">
+            Hello User!
+        </h1>
+        <p id="greetingMessage" name="greetingMessage">
+            Welcome to my Interactive Website!
+        </p>
+        </br>
+        <input type="text" placeholder="Enter your name" id="nameBox" name="nameBox"></br>
+        <input type="text" placeholder="Enter your preferred greeting message" id="textBox" name="textBox" style="width: 35%;"></br>
+        </br>
+        <input type="button" value="Enter" onclick="greetingChange();"></br>
+        </br>
+        </br>
+        <p id="colorMessage" name="colorMessage">Select a background color!</p>
+        <select id="colorDrop" name="colorDrop" style = "height: 4ch;" style = "width: 35%;">
+            <option value = "blue">Blue</option>
+            <option value = "red">Red</option>
+            <option value = "yellow">Yellow</option>
+            <option value = "orange">Orange</option>
+            <option value = "pink">Pink</option>
+            <option value = "purple">Purple</option>
+        </select></br>
+        </br>
+        <input type="button" value="Enter" onclick="colorChange();">
+
+    </body>
+</html>
