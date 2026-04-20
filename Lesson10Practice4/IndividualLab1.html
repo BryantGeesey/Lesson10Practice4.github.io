@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Lesson 5. Javascript</title>
+        <script src="programs1.js"></script>
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index.html">My Library of Webpages!</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Practice Activities</a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
+                                    <li><a class="dropdown-item" href="Transform&Filter2.html">Individual Activity 1</a></li>
+                                    <li><a class="dropdown-item" href="IndvWebsite2.html">Individual Activity 2</a></li>
+                                    <li><a class="dropdown-item" href="IndvWebsite3.html">Individual Activity 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Partner Labs</a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
+                                    <li><a class="dropdown-item" href="PartnerLab1-2.html">Partner Lab 1</a></li>
+                                    <li><a class="dropdown-item" href="PartnerLab2-2.html">Partner Lab 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Individual Assignments</a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
+                                    <li><a class="dropdown-item" href="IndividualLab1.html">Individual Lab 1</a></li>
+                                    <li><a class="dropdown-item" href="IndividualLab2.html">Individual Lab 2</a></li>
+                                    <li><a class="dropdown-item" href="IndividualLab3.html">Individual Lab 3</a></li>
+                                    <li><a class="dropdown-item" href="IndividualLab4.html">Individual Lab 4</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        <h1>Lesson 5. JavaScript</h1>
+        <p>This page is to practice my JavaScript.</p> 
+        <!--Problem 1-->
+        <p id="label">&nbsp;</p>
+        <select name = "options" id = "options">
+            <option value = "1">Option 1</option>
+            <option value = "2">Option 2</option>
+            <option value = "3">Option 3</option>
+        </select>
+        <br/>
+        <br/>
+        <input type ="button" value="Reset Screen" onclick="resetScreen();">
+        <!--Problem 2-->
+        <p>Gender Reveal</p>
+        <div id="genderBox" style="border-style: solid; border-width: 1px; border-color: black;">
+            <p id="genderLabel">&nbsp;</p>
+        </div>
+        <br/>
+        <input type ="button" value="Reveal" onclick="revealGender();">
+        <br/>
+        <br/>
+        <!--Problem 3-->
+        <p>Show Color</p>
+        <div id="colorBox" style="border-style: solid; border-width: 1px; border-color: black;">
+            <p id="colorReveal">&nbsp;</p>
+        </div>
+        <br/>
+        <br/>
+        <input type ="text" placeholder ="Choose a color!" id="colorChoice" name ="colorChoice"><br/>
+        <br/>
+        <input type="button" value="Submit" onclick="showColor();">
+    </body>
+</html>
